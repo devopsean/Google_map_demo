@@ -1,0 +1,150 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/amplify_core/intermediates/res/merged/debug/values-ru/values-ru.xml",
+            "map": [
+                {
+                    "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/4baa41ae969e39d9320c43f68af4b761/appcompat-1.0.0/res/values-ru/values-ru.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,220,322,434,520,625,745,824,902,994,1088,1184,1277,1373,1467,1563,1658,1750,1842,1922,2028,2136,2234,2343,2449,2557,2732,2832",
+                        "endColumns": "114,101,111,85,104,119,78,77,91,93,95,92,95,93,95,94,91,91,79,105,107,97,108,105,107,174,99,80",
+                        "endOffsets": "215,317,429,515,620,740,819,897,989,1083,1179,1272,1368,1462,1558,1653,1745,1837,1917,2023,2131,2229,2338,2444,2552,2727,2827,2908"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,37",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,220,322,434,520,625,745,824,902,994,1088,1184,1277,1373,1467,1563,1658,1750,1842,1922,2028,2136,2234,2343,2449,2557,2732,3569",
+                        "endColumns": "114,101,111,85,104,119,78,77,91,93,95,92,95,93,95,94,91,91,79,105,107,97,108,105,107,174,99,80",
+                        "endOffsets": "215,317,429,515,620,740,819,897,989,1083,1179,1272,1368,1462,1558,1653,1745,1837,1917,2023,2131,2229,2338,2444,2552,2727,2827,3645"
+                    }
+                },
+                {
+                    "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/6237ad95b0e5b20ab6d8b06547a7d208/jetified-navigation-dynamic-features-fragment-2.3.4/res/values-ru/values-ru.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,155,250,350,414,491",
+                        "endColumns": "99,94,99,63,76,73",
+                        "endOffsets": "150,245,345,409,486,560"
+                    },
+                    "to": {
+                        "startLines": "29,30,31,34,35,36",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "2832,2932,3027,3354,3418,3495",
+                        "endColumns": "99,94,99,63,76,73",
+                        "endOffsets": "2927,3022,3122,3413,3490,3564"
+                    }
+                },
+                {
+                    "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/122df2e57d294d1a53db26bbc3b813c1/core-1.6.0/res/values-ru/values-ru.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "38",
+                        "startColumns": "4",
+                        "startOffsets": "3650",
+                        "endColumns": "100",
+                        "endOffsets": "3746"
+                    }
+                },
+                {
+                    "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/77747992e74ebb62cedfb9eaf9c15965/navigation-ui-2.3.4/res/values-ru/values-ru.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,163",
+                        "endColumns": "107,118",
+                        "endOffsets": "158,277"
+                    },
+                    "to": {
+                        "startLines": "32,33",
+                        "startColumns": "4,4",
+                        "startOffsets": "3127,3235",
+                        "endColumns": "107,118",
+                        "endOffsets": "3230,3349"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/amplify_core/intermediates/incremental/mergeDebugResources/merged.dir/values-ru/values-ru.xml",
+            "map": [
+                {
+                    "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/4baa41ae969e39d9320c43f68af4b761/appcompat-1.0.0/res/values-ru/values-ru.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,220,322,434,520,625,745,824,902,994,1088,1184,1277,1373,1467,1563,1658,1750,1842,1922,2028,2136,2234,2343,2449,2557,2732,2832",
+                        "endColumns": "114,101,111,85,104,119,78,77,91,93,95,92,95,93,95,94,91,91,79,105,107,97,108,105,107,174,99,80",
+                        "endOffsets": "215,317,429,515,620,740,819,897,989,1083,1179,1272,1368,1462,1558,1653,1745,1837,1917,2023,2131,2229,2338,2444,2552,2727,2827,2908"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,37",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,220,322,434,520,625,745,824,902,994,1088,1184,1277,1373,1467,1563,1658,1750,1842,1922,2028,2136,2234,2343,2449,2557,2732,3569",
+                        "endColumns": "114,101,111,85,104,119,78,77,91,93,95,92,95,93,95,94,91,91,79,105,107,97,108,105,107,174,99,80",
+                        "endOffsets": "215,317,429,515,620,740,819,897,989,1083,1179,1272,1368,1462,1558,1653,1745,1837,1917,2023,2131,2229,2338,2444,2552,2727,2827,3645"
+                    }
+                },
+                {
+                    "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/6237ad95b0e5b20ab6d8b06547a7d208/jetified-navigation-dynamic-features-fragment-2.3.4/res/values-ru/values-ru.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,155,250,350,414,491",
+                        "endColumns": "99,94,99,63,76,73",
+                        "endOffsets": "150,245,345,409,486,560"
+                    },
+                    "to": {
+                        "startLines": "29,30,31,34,35,36",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "2832,2932,3027,3354,3418,3495",
+                        "endColumns": "99,94,99,63,76,73",
+                        "endOffsets": "2927,3022,3122,3413,3490,3564"
+                    }
+                },
+                {
+                    "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/122df2e57d294d1a53db26bbc3b813c1/core-1.6.0/res/values-ru/values-ru.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "38",
+                        "startColumns": "4",
+                        "startOffsets": "3650",
+                        "endColumns": "100",
+                        "endOffsets": "3746"
+                    }
+                },
+                {
+                    "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/77747992e74ebb62cedfb9eaf9c15965/navigation-ui-2.3.4/res/values-ru/values-ru.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,163",
+                        "endColumns": "107,118",
+                        "endOffsets": "158,277"
+                    },
+                    "to": {
+                        "startLines": "32,33",
+                        "startColumns": "4,4",
+                        "startOffsets": "3127,3235",
+                        "endColumns": "107,118",
+                        "endOffsets": "3230,3349"
+                    }
+                }
+            ]
+        }
+    ]
+}

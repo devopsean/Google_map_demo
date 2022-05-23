@@ -1,0 +1,8 @@
+in/appyflow/geofire/GeofirePlugin.java
+ in.appyflow.geofire.GeofirePlugin
+ in.appyflow.geofire.GeofirePlugin$1
+ in.appyflow.geofire.GeofirePlugin$2
+ in.appyflow.geofire.GeofirePlugin$3
+ in.appyflow.geofire.GeofirePlugin$4
+in/appyflow/geofire/BuildConfig.java
+ in.appyflow.geofire.BuildConfig

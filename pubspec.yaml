@@ -1,0 +1,125 @@
+name: google_map_flutter
+description: A new Flutter project.
+
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+5
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  introduction_screen: ^2.1.0
+  dots_indicator: ^2.0.0
+  circular_countdown_timer: ^0.2.0
+  pin_code_fields: ^7.3.0
+  flutter_bloc: ^8.0.1
+  equatable: ^2.0.3
+  fluttertoast: ^8.0.8
+  google_maps_flutter: ^2.1.1
+  percent_indicator: ^4.0.0
+  #camera: ^0.9.4+14
+
+  connectivity_plus: ^2.2.1
+  provider: ^6.0.2
+  flutter_feather_icons: ^2.0.0+1
+  geolocator: ^8.2.0
+  flutter_geofire: ^2.0.1
+  oauth2: ^2.0.0
+  amplify_flutter: ^0.4.0
+  amplify_datastore: ^0.4.0
+  amplify_core: ^0.4.0
+  dio: ^4.0.4
+  get: ^4.6.1
+  hive: ^2.0.6
+  flutter_datetime_picker: ^1.5.1
+  intl: ^0.17.0
+  flutter_credit_card: ^3.0.1
+  flutter_launcher_icons: ^0.9.2
+  http: ^0.13.4
+  uuid: ^3.0.6
+  webview_flutter: ^3.0.2
+  flutter_polyline_points: ^1.0.0
+
+
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/launcher_icon.png"
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/
+    - assets/map_styles/
+
+  fonts:
+    - family: Poppings
+      fonts:
+        - asset: assets/fonts/Poppins-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Poppins-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Poppins-Black.ttf
+          weight: 900
+
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Roboto-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Roboto-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Roboto-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Roboto-Black.ttf
+          weight: 900
+
+    - family: RobotoCondensed
+      fonts:
+        - asset: assets/fonts/RobotoCondensed-Regular.ttf
+          weight: 400
+
+
+    - family: Staatliches
+      fonts:
+        - asset: assets/fonts/Staatliches-Regular.ttf
+          weight: 400
+
+    - family: SfProDisplay
+      fonts:
+        - asset: assets/fonts/Staatliches-Regular.ttf
+          weight: 500
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/webview_flutter_android/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/122df2e57d294d1a53db26bbc3b813c1/core-1.6.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/webview_flutter_android/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/122df2e57d294d1a53db26bbc3b813c1/core-1.6.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/webview_flutter_android/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/122df2e57d294d1a53db26bbc3b813c1/core-1.6.0/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/webview_flutter_android/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/122df2e57d294d1a53db26bbc3b813c1/core-1.6.0/res/layout-v21/notification_template_custom_big.xml"
+    }
+]

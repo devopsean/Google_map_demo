@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/amplify_flutter/intermediates/res/merged/debug/interpolator-v21/mtrl_fast_out_linear_in.xml",
+        "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/f9fffcd81cbe8acbd7f51804fefee451/material-1.0.0/res/interpolator-v21/mtrl_fast_out_linear_in.xml"
+    },
+    {
+        "merged": "/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/amplify_flutter/intermediates/res/merged/debug/interpolator-v21/mtrl_linear_out_slow_in.xml",
+        "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/f9fffcd81cbe8acbd7f51804fefee451/material-1.0.0/res/interpolator-v21/mtrl_linear_out_slow_in.xml"
+    },
+    {
+        "merged": "/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/amplify_flutter/intermediates/res/merged/debug/interpolator-v21/mtrl_fast_out_slow_in.xml",
+        "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/f9fffcd81cbe8acbd7f51804fefee451/material-1.0.0/res/interpolator-v21/mtrl_fast_out_slow_in.xml"
+    }
+]

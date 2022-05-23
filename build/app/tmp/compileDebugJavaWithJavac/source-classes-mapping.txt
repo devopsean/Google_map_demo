@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/spoticharge/google_map_flutter/BuildConfig.java
+ com.spoticharge.google_map_flutter.BuildConfig

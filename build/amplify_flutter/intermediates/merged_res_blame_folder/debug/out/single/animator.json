@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/amplify_flutter/intermediates/res/merged/debug/animator/nav_default_enter_anim.xml",
+        "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/77747992e74ebb62cedfb9eaf9c15965/navigation-ui-2.3.4/res/animator/nav_default_enter_anim.xml"
+    },
+    {
+        "merged": "/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/amplify_flutter/intermediates/res/merged/debug/animator/mtrl_fab_transformation_sheet_expand_spec.xml",
+        "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/f9fffcd81cbe8acbd7f51804fefee451/material-1.0.0/res/animator/mtrl_fab_transformation_sheet_expand_spec.xml"
+    },
+    {
+        "merged": "/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/amplify_flutter/intermediates/res/merged/debug/animator/mtrl_fab_hide_motion_spec.xml",
+        "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/f9fffcd81cbe8acbd7f51804fefee451/material-1.0.0/res/animator/mtrl_fab_hide_motion_spec.xml"
+    },
+    {
+        "merged": "/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/amplify_flutter/intermediates/res/merged/debug/animator/nav_default_pop_enter_anim.xml",
+        "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/77747992e74ebb62cedfb9eaf9c15965/navigation-ui-2.3.4/res/animator/nav_default_pop_enter_anim.xml"
+    },
+    {
+        "merged": "/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/amplify_flutter/intermediates/res/merged/debug/animator/nav_default_exit_anim.xml",
+        "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/77747992e74ebb62cedfb9eaf9c15965/navigation-ui-2.3.4/res/animator/nav_default_exit_anim.xml"
+    },
+    {
+        "merged": "/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/amplify_flutter/intermediates/res/merged/debug/animator/nav_default_pop_exit_anim.xml",
+        "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/77747992e74ebb62cedfb9eaf9c15965/navigation-ui-2.3.4/res/animator/nav_default_pop_exit_anim.xml"
+    },
+    {
+        "merged": "/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/amplify_flutter/intermediates/res/merged/debug/animator/design_fab_hide_motion_spec.xml",
+        "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/f9fffcd81cbe8acbd7f51804fefee451/material-1.0.0/res/animator/design_fab_hide_motion_spec.xml"
+    },
+    {
+        "merged": "/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/amplify_flutter/intermediates/res/merged/debug/animator/mtrl_btn_unelevated_state_list_anim.xml",
+        "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/f9fffcd81cbe8acbd7f51804fefee451/material-1.0.0/res/animator/mtrl_btn_unelevated_state_list_anim.xml"
+    },
+    {
+        "merged": "/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/amplify_flutter/intermediates/res/merged/debug/animator/design_fab_show_motion_spec.xml",
+        "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/f9fffcd81cbe8acbd7f51804fefee451/material-1.0.0/res/animator/design_fab_show_motion_spec.xml"
+    },
+    {
+        "merged": "/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/amplify_flutter/intermediates/res/merged/debug/animator/mtrl_fab_transformation_sheet_collapse_spec.xml",
+        "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/f9fffcd81cbe8acbd7f51804fefee451/material-1.0.0/res/animator/mtrl_fab_transformation_sheet_collapse_spec.xml"
+    },
+    {
+        "merged": "/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/amplify_flutter/intermediates/res/merged/debug/animator/mtrl_btn_state_list_anim.xml",
+        "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/f9fffcd81cbe8acbd7f51804fefee451/material-1.0.0/res/animator/mtrl_btn_state_list_anim.xml"
+    },
+    {
+        "merged": "/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/amplify_flutter/intermediates/res/merged/debug/animator/mtrl_chip_state_list_anim.xml",
+        "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/f9fffcd81cbe8acbd7f51804fefee451/material-1.0.0/res/animator/mtrl_chip_state_list_anim.xml"
+    },
+    {
+        "merged": "/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/amplify_flutter/intermediates/res/merged/debug/animator/mtrl_fab_show_motion_spec.xml",
+        "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/f9fffcd81cbe8acbd7f51804fefee451/material-1.0.0/res/animator/mtrl_fab_show_motion_spec.xml"
+    }
+]

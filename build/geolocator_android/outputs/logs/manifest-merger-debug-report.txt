@@ -1,0 +1,35 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/SEANONUOHA/desktop/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_android-3.1.3/android/src/main/AndroidManifest.xml:1:1-13:12
+INJECTED from /Users/SEANONUOHA/desktop/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_android-3.1.3/android/src/main/AndroidManifest.xml:1:1-13:12
+INJECTED from /Users/SEANONUOHA/desktop/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_android-3.1.3/android/src/main/AndroidManifest.xml:1:1-13:12
+	package
+		ADDED from /Users/SEANONUOHA/desktop/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_android-3.1.3/android/src/main/AndroidManifest.xml:2:3-36
+		INJECTED from /Users/SEANONUOHA/desktop/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_android-3.1.3/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/SEANONUOHA/desktop/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_android-3.1.3/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/SEANONUOHA/desktop/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_android-3.1.3/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /Users/SEANONUOHA/desktop/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_android-3.1.3/android/src/main/AndroidManifest.xml:4:5-76
+	android:name
+		ADDED from /Users/SEANONUOHA/desktop/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_android-3.1.3/android/src/main/AndroidManifest.xml:4:22-74
+application
+ADDED from /Users/SEANONUOHA/desktop/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_android-3.1.3/android/src/main/AndroidManifest.xml:6:5-12:19
+service#com.baseflow.geolocator.GeolocatorLocationService
+ADDED from /Users/SEANONUOHA/desktop/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_android-3.1.3/android/src/main/AndroidManifest.xml:7:9-11:60
+	android:enabled
+		ADDED from /Users/SEANONUOHA/desktop/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_android-3.1.3/android/src/main/AndroidManifest.xml:8:17-39
+	android:exported
+		ADDED from /Users/SEANONUOHA/desktop/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_android-3.1.3/android/src/main/AndroidManifest.xml:9:17-41
+	android:foregroundServiceType
+		ADDED from /Users/SEANONUOHA/desktop/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_android-3.1.3/android/src/main/AndroidManifest.xml:10:17-57
+	android:name
+		ADDED from /Users/SEANONUOHA/desktop/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_android-3.1.3/android/src/main/AndroidManifest.xml:11:17-58
+uses-sdk
+INJECTED from /Users/SEANONUOHA/desktop/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_android-3.1.3/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/SEANONUOHA/desktop/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_android-3.1.3/android/src/main/AndroidManifest.xml
+INJECTED from /Users/SEANONUOHA/desktop/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_android-3.1.3/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/SEANONUOHA/desktop/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_android-3.1.3/android/src/main/AndroidManifest.xml
+		ADDED from /Users/SEANONUOHA/desktop/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_android-3.1.3/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/SEANONUOHA/desktop/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_android-3.1.3/android/src/main/AndroidManifest.xml
