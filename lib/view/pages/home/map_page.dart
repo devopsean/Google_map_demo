@@ -41,7 +41,7 @@ class _MapPageState extends State<MapPage> with SingleTickerProviderStateMixin {
 
   String? _nightMap;
 
-  List<String>? mapStyleList;
+  List<String> mapStyleList = [];
   final GlobalKey<ScaffoldState>? _scaffoldKey = GlobalKey<ScaffoldState>();
   var focusDestination = FocusNode();
   bool focused = false;
@@ -180,7 +180,7 @@ class _MapPageState extends State<MapPage> with SingleTickerProviderStateMixin {
             infoWindow: InfoWindow(
               anchor: Offset(2, 2),
               title:
-                  '${marker.markerName!} ${markersDirectionDetails.isNotEmpty ? markersDirectionDetails[i].distanceText!.toString() : ""}',
+                  '${marker.markerName!} ${markersDirectionDetails.isNotEmpty ? markersDirectionDetails[i].distanceText.toString() : ""}',
               snippet:
                   '${markersDirectionDetails.isNotEmpty ? markersDirectionDetails[i].durationText : ""}',
             ),
@@ -198,7 +198,7 @@ class _MapPageState extends State<MapPage> with SingleTickerProviderStateMixin {
 
   void repositionCamera(GoogleMapController controlla) async {
     CameraPosition cp = new CameraPosition(target: userLocation!, zoom: 15);
-    mapController!.animateCamera(CameraUpdate.newCameraPosition(cp));
+    controlla.animateCamera(CameraUpdate.newCameraPosition(cp));
   }
 
   void setFocus() {
@@ -300,8 +300,9 @@ class _MapPageState extends State<MapPage> with SingleTickerProviderStateMixin {
 
   @override
   void initState() {
-    _loadMap();
-    // TODO: implement initState
+    //WidgetsBinding.instance!.addPostFrameCallback((_) => _loadMap());
+
+    getUserLocation().then((value) => _loadMap()); // TODO: implement initState
     super.initState();
   }
 
@@ -313,7 +314,7 @@ class _MapPageState extends State<MapPage> with SingleTickerProviderStateMixin {
     super.dispose();
   }
 
-  Future<void> getUserLocation() async {
+  Future getUserLocation() async {
     bool serviceEnabled;
     LocationPermission permission;
     try {
@@ -349,23 +350,24 @@ class _MapPageState extends State<MapPage> with SingleTickerProviderStateMixin {
   Future _loadMap() async {
     _nightMap = await rootBundle.loadString('assets/map_styles/night_map.json');
     //_standardMap = await rootBundle.load('assets/map_styles/standard_map.json');
-    showToast('${MapStyle.values.length}');
+
     for (int i = 1; i <= MapStyle.values.length; i++) {
-String style
-     =
+      String style =
           await rootBundle.loadString('assets/map_styles/${i.toString()}.json');
-mapStyleList!.add(style);
-      showToast('${mapStyleList![i]}hgj');
+      print('check: who de');
+      mapStyleList.add(style);
+      showToast('ya');
+    }
 
-    }      showToast('ya');
     setState(() {});
+    print('check: about to start');
 
-    await getUserLocation();
-
+    print('check: start');
     try {
       for (int i = 0; i < markerLatLngs.length; i++) {
         DirectionDetails details = await RequestHelper.getDirectionDetails(
             userLocation!, markerLatLngs[i]);
+        print('check: $i');
         markersDirectionDetails.add(details);
         showToast('${i + 1} marker${i == 0 ? "" : "s"} found');
       }
@@ -413,25 +415,23 @@ mapStyleList!.add(style);
 //   }
 //   break;
 // }
-
-                      if (state == MapStyle.standard) {
-
-                        mapController!.setMapStyle(mapStyleList![state.index]);
-                        //  mapController!.setMapStyle(_nightMap!);
-                        showToast('${mapStyleList![state.index]}');
-                      }
-                      if (state == MapStyle.night) {
-                        showToast('${mapStyleList![state.index]}');
-                        mapController!.setMapStyle(mapStyleList![state.index]);
-                      }
-                      if (state == MapStyle.silver) {
-
-                        showToast('$_nightMap!');
-                      }
-                      if (state == MapStyle.aubergine) {
-                        mapController!.setMapStyle(mapStyleList![state.index]);
-                        showToast('${state.index.toString()}');
-                      }
+                      mapController!.setMapStyle(mapStyleList![state.index]);
+                      // if (state == MapStyle.standard) {
+                      //   mapController!.setMapStyle(mapStyleList![state.index]);
+                      //   //  mapController!.setMapStyle(_nightMap!);
+                      //
+                      // }
+                      // if (state == MapStyle.night) {
+                      //
+                      //   mapController!.setMapStyle(mapStyleList![state.index]);
+                      // }
+                      // if (state == MapStyle.silver) {
+                      //
+                      // }
+                      // if (state == MapStyle.aubergine) {
+                      //   mapController!.setMapStyle(mapStyleList![state.index]);
+                      //
+                      // }
                     },
                     builder: (context, state) {
                       return GoogleMap(
@@ -446,9 +446,9 @@ mapStyleList!.add(style);
                         initialCameraPosition: _initialCameraPosition,
                         mapType: MapType.normal,
                         onMapCreated: (GoogleMapController controller) {
-                          repositionCamera(controller);
+                          //repositionCamera(controller);
                           mapController = controller;
-//mapController!.setMapStyle(_nightMap);
+                          controller.setMapStyle(_nightMap);
                           _controller.complete(controller);
                         },
                         myLocationButtonEnabled: true,

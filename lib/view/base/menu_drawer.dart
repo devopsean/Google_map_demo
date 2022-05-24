@@ -70,7 +70,7 @@ class _MenuDrawerState extends State<MenuDrawer> {
                     onChanged: (MapStyle? value) {
                       context.read<MapCubit>().updateMapStyle(value!);
                       setState(() {
-                        _mapStyle = value!;
+                        _mapStyle = value;
                       });
                     },
                   ),
@@ -81,7 +81,7 @@ class _MenuDrawerState extends State<MenuDrawer> {
                     onChanged: (MapStyle? value) {
                       context.read<MapCubit>().updateMapStyle(value!);
                       setState(() {
-                        _mapStyle = value!;
+                        _mapStyle = value;
                       });
                     },
                   ),
@@ -92,7 +92,7 @@ class _MenuDrawerState extends State<MenuDrawer> {
                     onChanged: (MapStyle? value) {
                       context.read<MapCubit>().updateMapStyle(value!);
                       setState(() {
-                        _mapStyle = value!;
+                        _mapStyle = value;
                       });
                     },
                   ),
@@ -103,7 +103,7 @@ class _MenuDrawerState extends State<MenuDrawer> {
                     onChanged: (MapStyle? value) {
                       context.read<MapCubit>().updateMapStyle(value!);
                       setState(() {
-                        _mapStyle = value!;
+                        _mapStyle = value;
                       });
                     },
                   ),

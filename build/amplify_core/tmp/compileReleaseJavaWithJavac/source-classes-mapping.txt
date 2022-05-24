@@ -1,2 +1,0 @@
-com/amazonaws/amplify/amplify_core/BuildConfig.java
- com.amazonaws.amplify.amplify_core.BuildConfig

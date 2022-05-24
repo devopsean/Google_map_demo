@@ -1,4 +1,0 @@
-#Sun May 22 00:45:54 WAT 2022
-base.0=/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
