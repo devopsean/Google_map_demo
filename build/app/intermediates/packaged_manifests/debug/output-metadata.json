@@ -4,7 +4,7 @@
     "type": "PACKAGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "com.spoticharge.google_map_flutter",
+  "applicationId": "com.googlemap.google_map_flutter",
   "variantName": "debug",
   "elements": [
     {

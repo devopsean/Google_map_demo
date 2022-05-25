@@ -1,4 +1,4 @@
-package com.spoticharge.google_map_flutter
+package com.googlemap.google_map_flutter
 
 import io.flutter.embedding.android.FlutterActivity
 

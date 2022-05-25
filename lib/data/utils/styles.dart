@@ -88,7 +88,7 @@ final robotoGradient_1 = TextStyle(
     fontFamily: 'Roboto',
     fontWeight: FontWeight.w900,
     fontSize: Dimensions.fontSizeDefault,
-    letterSpacing: 0.47 * 8,
+
     foreground: Paint()..shader = linearGradient_1);
 
 final robotoGradient_2 = TextStyle(

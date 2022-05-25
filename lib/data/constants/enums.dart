@@ -4,5 +4,5 @@ enum ConnectionType {
 }
 
 enum MapStyle{
-  standard,night,silver,aubergine
+  standard,night,silver,aubergine, retro, dark
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.spoticharge.google_map_flutter"
+    package="com.googlemap.google_map_flutter"
     android:versionCode="5"
     android:versionName="1.0.0" >
 
@@ -26,9 +26,9 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/launcher_icon"
-        android:label="SpotiCharge" >
+        android:label="Googlemap" >
         <activity
-            android:name="com.spoticharge.google_map_flutter.MainActivity"
+            android:name="com.googlemap.google_map_flutter.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:exported="true"
             android:hardwareAccelerated="true"
@@ -96,7 +96,7 @@
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.spoticharge.google_map_flutter.firebaseinitprovider"
+            android:authorities="com.googlemap.google_map_flutter.firebaseinitprovider"
             android:exported="false"
             android:initOrder="100" />
 

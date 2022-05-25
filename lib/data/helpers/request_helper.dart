@@ -100,48 +100,36 @@ class RequestHelper {
         return result;
       }
     } catch (e) {
-      //  return 'failed';
-      print(e);
-      print('CHECK REQUEST HELPER');
+      Exception(e);
     }
 
     return jsonDecode(response.body);
   }
 
-//static String mapKey = 'AIzaSyBAaamLNznjZApzbu038_LxbysOumdDHVM';
   static String mapKey = 'AIzaSyBAaamLNznjZApzbu038_LxbysOumdDHVM';
 
-  static Future<DirectionDetails> getDirectionDetails(
+  static Future<MarkerDirection> getDirectionDetails(
       LatLng startPosition, LatLng endPosition) async {
     try {
       String url =
-          // 'https://maps.googleapis.com/maps/api/directions/json?origin=41.43206,-81.38992&destination=41.43206,-81.38992&mode=driving&key=AIzaSyBAaamLNznjZApzbu038_LxbysOumdDHVM';
-
           'https://maps.googleapis.com/maps/api/directions/json?origin=${startPosition.latitude},${startPosition.longitude}&destination=${endPosition.latitude},${endPosition.longitude}&mode=driving&key=$mapKey';
-      print('check: url is: $url');
-      var response = await getRequest(url);
-      print('check: response is ${response.toString()}');
-      if (response == 'failed') {
 
+      var response = await getRequest(url);
+
+      if (response == 'failed') {
         //  return null;
       }
-      DirectionDetails directionDetails = DirectionDetails();
+      MarkerDirection directionDetails = MarkerDirection();
       directionDetails.durationText =
           response['routes'][0]['legs'][0]['duration']['text'];
-      directionDetails.durationValue =
-          response['routes'][0]['legs'][0]['duration']['value'];
 
       directionDetails.distanceText =
           response['routes'][0]['legs'][0]['distance']['text'];
-      directionDetails.distanceValue =
-          response['routes'][0]['legs'][0]['distance']['value'];
-//  routes[0].overview_polyline.points
+
       directionDetails.encodedPoints =
           response['routes'][0]['overview_polyline']['points'];
       return directionDetails;
     } catch (e) {
-      print("check: error sis e");
-      showToast(e.toString());
       throw e;
     }
   }

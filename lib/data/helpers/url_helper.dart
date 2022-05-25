@@ -1,7 +1,7 @@
 ///URLs
 class BaseURL {
   static bool isLive = false;
-  static String _stage = "https://api.spoticharge.com/api";
+  static String _stage = "https://api.googlemap.com/api";
   static String _live = "";
 
   static String getFullPath(String url) {

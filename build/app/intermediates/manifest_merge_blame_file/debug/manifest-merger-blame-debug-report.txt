@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.spoticharge.google_map_flutter"
+3    package="com.googlemap.google_map_flutter"
 4    android:versionCode="5"
 5    android:versionName="1.0.0" >
 6
@@ -40,9 +40,9 @@
 26-->[androidx.core:core:1.6.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/122df2e57d294d1a53db26bbc3b813c1/core-1.6.0/AndroidManifest.xml:24:18-86
 27        android:debuggable="true"
 28        android:icon="@mipmap/launcher_icon"
-29        android:label="SpotiCharge" >
+29        android:label="Googlemap" >
 30        <activity
-31            android:name="com.spoticharge.google_map_flutter.MainActivity"
+31            android:name="com.googlemap.google_map_flutter.MainActivity"
 32            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
 33            android:exported="true"
 34            android:hardwareAccelerated="true"
@@ -138,7 +138,7 @@
 97-->[com.google.firebase:firebase-common:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/d42d6154c626348d39e01ff6984e4b74/jetified-firebase-common-17.0.0/AndroidManifest.xml:12:9-16:39
 98            android:name="com.google.firebase.provider.FirebaseInitProvider"
 98-->[com.google.firebase:firebase-common:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/d42d6154c626348d39e01ff6984e4b74/jetified-firebase-common-17.0.0/AndroidManifest.xml:13:13-77
-99            android:authorities="com.spoticharge.google_map_flutter.firebaseinitprovider"
+99            android:authorities="com.googlemap.google_map_flutter.firebaseinitprovider"
 99-->[com.google.firebase:firebase-common:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/d42d6154c626348d39e01ff6984e4b74/jetified-firebase-common-17.0.0/AndroidManifest.xml:14:13-72
 100            android:exported="false"
 100-->[com.google.firebase:firebase-common:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/d42d6154c626348d39e01ff6984e4b74/jetified-firebase-common-17.0.0/AndroidManifest.xml:15:13-37

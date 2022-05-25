@@ -61,91 +61,15 @@ class _MapPageState extends State<MapPage> with SingleTickerProviderStateMixin {
   GoogleMapController? mapController;
 
   List<LatLng> markerLatLngs = [
-    LatLng(39.460235637586, -0.37692144555359275),
-    LatLng(39.51538718133392, -0.3743419593607402),
-    LatLng(39.402612852737384, -0.41839353233732984),
-    LatLng(39.43843402101849, -0.3642951093836233),
-    LatLng(39.4438056083871, -0.3619766055427502),
-    LatLng(39.464887817649796, -0.36831312057832066),
-    LatLng(39.4987777512897, -0.3467864884212849),
-    LatLng(39.46799820032132, -0.43245260773886934),
-    LatLng(39.46799820032132, -0.43245260773886934),
-    LatLng(4.823164130724128, 7.053037342681753),
-  ];
-  List<MarkerModel> markerList = [
-    MarkerModel(
-      address: 'Carrer de la Séquia de la Cadena, 5, 46011 València',
-      rating: '3.1',
-      markerName: "Iberdrola Charging Marker",
-      latitude: 4.840896914861768,
-      longitude: 7.050211007372598,
-    ),
-    MarkerModel(
-      address: 'Carrer del Dr. Marcos Sopena, 21, 46011 València',
-      rating: '3.3',
-      markerName: "Etecnic",
-      latitude: 4.820354056371533,
-      longitude: 7.056225785858122,
-    ),
-    MarkerModel(
-      address: 'Calle Fogainers, 1 - Pol. Ind, 46014 Valencia',
-      rating: '3.3',
-      markerName: "Allego",
-      latitude: 4.819865744457899,
-      longitude: 7.0628326147900236,
-    ),
-    MarkerModel(
-      address: 'Carrer del Cobertís dels Brodadors, 6, 46001 València',
-      rating: '3.3',
-      markerName: "EV pass",
-      latitude: 4.823009980822565,
-      longitude: 7.054768810051113,
-    ),
-    MarkerModel(
-      address: 'Carrer de la Séquia de la Cadena, 5, 46011 València',
-      rating: '3.1',
-      markerName: "Iberdrola Charging Marker",
-      latitude: 4.840896914861768,
-      longitude: 7.050211007372598,
-    ),
-    MarkerModel(
-      address: 'Carrer del Dr. Marcos Sopena, 21, 46011 València',
-      rating: '3.3',
-      markerName: "Etecnic",
-      latitude: 4.820354056371533,
-      longitude: 7.056225785858122,
-    ),
-    MarkerModel(
-      address: 'Calle Fogainers, 1 - Pol. Ind, 46014 Valencia',
-      rating: '3.3',
-      markerName: "Allego",
-      latitude: 4.819865744457899,
-      longitude: 7.0628326147900236,
-    ),
-    MarkerModel(
-      address: 'Carrer del Cobertís dels Brodadors, 6, 46001 València',
-      rating: '3.3',
-      markerName: "EV pass",
-      latitude: 4.823009980822565,
-      longitude: 7.054768810051113,
-    ),
-    MarkerModel(
-      address: 'Carrer de la Séquia de la Cadena, 5, 46011 València',
-      rating: '3.1',
-      markerName: "Iberdrola Charging Marker",
-      latitude: 4.840896914861768,
-      longitude: 7.050211007372598,
-    ),
-    MarkerModel(
-      address: 'Carrer del Dr. Marcos Sopena, 21, 46011 València',
-      rating: '3.3',
-      markerName: "Etecnic",
-      latitude: 4.820354056371533,
-      longitude: 7.056225785858122,
-    ),
+    LatLng(39.55947088086999, -3.284376905181718),
+    LatLng(52.371269336266316, 4.892396687400338),
+    LatLng(48.83504853651144, 2.29800977331019),
+    LatLng(48.82894255378066, 2.26501869829721),
+
+    LatLng(48.827090718528105, 2.2546135650445303),
   ];
 
-  Future<Uint8List> getBytesFromAsset(String path, int width) async {
+  Future<Uint8List> getIconBytes(String path, int width) async {
     ByteData data = await rootBundle.load(path);
     ui.Codec codec = await ui.instantiateImageCodec(data.buffer.asUint8List(),
         targetWidth: width);
@@ -155,24 +79,18 @@ class _MapPageState extends State<MapPage> with SingleTickerProviderStateMixin {
         .asUint8List();
   }
 
-  Future<void> createMarkers() async {
-    // ImageConfiguration imageConfiguration =
-    //     createLocalImageConfiguration(context, size: const Size(30, 30));
-    // nearbyIcon = await BitmapDescriptor.fromAssetImage(
-    //     imageConfiguration, 'assets/images/marker_icon.png');
+  Future<void> addMarkers() async {
     Uint8List markerIcon =
-        await getBytesFromAsset('assets/images/golang_logo.png', 130);
+        await getIconBytes('assets/images/golang_logo.png', 130);
     nearbyIcon = BitmapDescriptor.fromBytes(markerIcon);
 
     try {
-      for (int i = 0; i < markerList.length; i++) {
-        MarkerModel marker = markerList[i];
-
+      for (int i = 0; i < markerLatLngs.length; i++) {
         LatLng markerLocation = markerLatLngs[i];
         _markers.add(
           Marker(
             onTap: () async {
-              await getDirection(userLocation!, markerLocation, i);
+              await getDirectionDetails(userLocation!, markerLocation, i);
             },
             markerId: MarkerId(i.toString()),
             position: markerLocation,
@@ -180,7 +98,7 @@ class _MapPageState extends State<MapPage> with SingleTickerProviderStateMixin {
             infoWindow: InfoWindow(
               anchor: Offset(2, 2),
               title:
-                  '${marker.markerName!} ${markersDirectionDetails.isNotEmpty ? markersDirectionDetails[i].distanceText.toString() : ""}',
+                  '${markersDirectionDetails.isNotEmpty ? markersDirectionDetails[i].distanceText.toString() : ""}',
               snippet:
                   '${markersDirectionDetails.isNotEmpty ? markersDirectionDetails[i].durationText : ""}',
             ),
@@ -197,7 +115,7 @@ class _MapPageState extends State<MapPage> with SingleTickerProviderStateMixin {
   }
 
   void repositionCamera(GoogleMapController controlla) async {
-    CameraPosition cp = new CameraPosition(target: userLocation!, zoom: 15);
+    CameraPosition cp = new CameraPosition(target: userLocation!, zoom: 11.5);
     controlla.animateCamera(CameraUpdate.newCameraPosition(cp));
   }
 
@@ -208,10 +126,10 @@ class _MapPageState extends State<MapPage> with SingleTickerProviderStateMixin {
     }
   }
 
-  DirectionDetails? directionDetails;
-  List<DirectionDetails> markersDirectionDetails = [];
+  MarkerDirection? directionDetails;
+  List<MarkerDirection> markersDirectionDetails = [];
 
-  Future<void> getDirection(
+  Future<void> getDirectionDetails(
       LatLng pickupLatLng, LatLng destinationLatLng, int index) async {
     PolylinePoints polylinePoints = PolylinePoints();
 
@@ -230,7 +148,7 @@ class _MapPageState extends State<MapPage> with SingleTickerProviderStateMixin {
     setState(() {
       Polyline polyline = Polyline(
           polylineId: PolylineId('polyid'),
-          color: Colors.greenAccent,
+          color: ColorPalette.green,
           points: polylineCoordinates,
           jointType: JointType.round,
           width: 5,
@@ -264,33 +182,33 @@ class _MapPageState extends State<MapPage> with SingleTickerProviderStateMixin {
     mapController!.animateCamera(CameraUpdate.newLatLngBounds(bounds, 70));
     Marker pickupMarker = Marker(
       position: pickupLatLng,
-      markerId: MarkerId('pickup'),
+      markerId: MarkerId('p'),
       icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueGreen),
     );
-    Marker destinationMarker = Marker(
+    Marker destinationMarker = Marker(visible: false,
       position: destinationLatLng,
-      markerId: MarkerId('destination'),
-      icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueRed),
+      markerId: MarkerId('d'),
+      icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueBlue),
     );
     setState(() {
       _markers.add(pickupMarker);
       _markers.add(destinationMarker);
     });
     Circle pickupCircle = Circle(
-      circleId: CircleId('pickup'),
+      circleId: CircleId('p'),
       strokeColor: Colors.green,
       strokeWidth: 3,
-      radius: 10,
+      radius: 8,
       center: pickupLatLng,
-      fillColor: ColorPalette.green,
+      fillColor: ColorPalette.white,
     );
     Circle destinationCircle = Circle(
-      circleId: CircleId('destination'),
+      circleId: CircleId('d'),
       strokeColor: ColorPalette.purple_1,
       strokeWidth: 3,
-      radius: 12,
+      radius: 8,
       center: destinationLatLng,
-      fillColor: ColorPalette.purple_1,
+      fillColor: ColorPalette.white,
     );
     setState(() {
       _circles.add(pickupCircle);
@@ -348,26 +266,20 @@ class _MapPageState extends State<MapPage> with SingleTickerProviderStateMixin {
   }
 
   Future _loadMap() async {
-    _nightMap = await rootBundle.loadString('assets/map_styles/night_map.json');
-    //_standardMap = await rootBundle.load('assets/map_styles/standard_map.json');
-
     for (int i = 1; i <= MapStyle.values.length; i++) {
       String style =
           await rootBundle.loadString('assets/map_styles/${i.toString()}.json');
-      print('check: who de');
+
       mapStyleList.add(style);
-      showToast('ya');
     }
 
     setState(() {});
-    print('check: about to start');
 
-    print('check: start');
     try {
       for (int i = 0; i < markerLatLngs.length; i++) {
-        DirectionDetails details = await RequestHelper.getDirectionDetails(
+        MarkerDirection details = await RequestHelper.getDirectionDetails(
             userLocation!, markerLatLngs[i]);
-        print('check: $i');
+
         markersDirectionDetails.add(details);
         showToast('${i + 1} marker${i == 0 ? "" : "s"} found');
       }
@@ -377,7 +289,7 @@ class _MapPageState extends State<MapPage> with SingleTickerProviderStateMixin {
       showToast('check: error is $e');
     }
 
-    await createMarkers();
+    await addMarkers();
   }
 
   @override
@@ -403,35 +315,8 @@ class _MapPageState extends State<MapPage> with SingleTickerProviderStateMixin {
                   BlocConsumer<MapCubit, MapStyle>(
                     listener: (context, state) {
                       // TODO: implement listener
-// switch(state) {
-//
-//   case MapStyle.standard: {
-//     mapController!.setMapStyle(mapStyleList![state.index]);
-//   }
-//   break;
-//
-//   default: {
-// //statements;
-//   }
-//   break;
-// }
-                      mapController!.setMapStyle(mapStyleList![state.index]);
-                      // if (state == MapStyle.standard) {
-                      //   mapController!.setMapStyle(mapStyleList![state.index]);
-                      //   //  mapController!.setMapStyle(_nightMap!);
-                      //
-                      // }
-                      // if (state == MapStyle.night) {
-                      //
-                      //   mapController!.setMapStyle(mapStyleList![state.index]);
-                      // }
-                      // if (state == MapStyle.silver) {
-                      //
-                      // }
-                      // if (state == MapStyle.aubergine) {
-                      //   mapController!.setMapStyle(mapStyleList![state.index]);
-                      //
-                      // }
+
+                      mapController!.setMapStyle(mapStyleList[state.index]);
                     },
                     builder: (context, state) {
                       return GoogleMap(
@@ -446,9 +331,8 @@ class _MapPageState extends State<MapPage> with SingleTickerProviderStateMixin {
                         initialCameraPosition: _initialCameraPosition,
                         mapType: MapType.normal,
                         onMapCreated: (GoogleMapController controller) {
-                          //repositionCamera(controller);
                           mapController = controller;
-                          controller.setMapStyle(_nightMap);
+                        //  controller.setMapStyle(mapStyleList[state.index]);
                           _controller.complete(controller);
                         },
                         myLocationButtonEnabled: true,

@@ -1,15 +1,11 @@
-class DirectionDetails {
+class MarkerDirection {
   String distanceText;
-  String? durationText;
-  int? distanceValue;
-  int? durationValue;
+  String durationText;
   String? encodedPoints;
 
-  DirectionDetails({
+  MarkerDirection({
     this.distanceText = "",
-    this.distanceValue,
     this.durationText = "",
-    this.durationValue ,
     this.encodedPoints,
   });
 }
