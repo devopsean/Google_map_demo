@@ -98,108 +98,52 @@
 75-->[androidx.window:window:1.0.0-beta04] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
 76            android:name="androidx.window.sidecar"
 76-->[androidx.window:window:1.0.0-beta04] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
-77            android:required="false" />
+77            android:required="false" /> <!-- Needs to be explicitly declared on P+ -->
 77-->[androidx.window:window:1.0.0-beta04] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
-78
-79        <activity
-79-->[com.amplifyframework:core:1.32.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/fa945e8da2521c61a4b73702821d0359/jetified-core-1.32.1/AndroidManifest.xml:27:9-29:54
-80            android:name="com.amplifyframework.devmenu.DeveloperMenuActivity"
-80-->[com.amplifyframework:core:1.32.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/fa945e8da2521c61a4b73702821d0359/jetified-core-1.32.1/AndroidManifest.xml:28:13-78
-81            android:theme="@style/OverlayActivity" /> <!-- Needs to be explicitly declared on P+ -->
-81-->[com.amplifyframework:core:1.32.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/fa945e8da2521c61a4b73702821d0359/jetified-core-1.32.1/AndroidManifest.xml:29:13-51
-82        <uses-library
-82-->[com.google.android.gms:play-services-maps:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/6f3daa1ca7d5f0cb334e07491a88b930/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
-83            android:name="org.apache.http.legacy"
-83-->[com.google.android.gms:play-services-maps:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/6f3daa1ca7d5f0cb334e07491a88b930/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
-84            android:required="false" />
-84-->[com.google.android.gms:play-services-maps:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/6f3daa1ca7d5f0cb334e07491a88b930/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
-85
-86        <service android:name="com.google.firebase.components.ComponentDiscoveryService" >
-86-->[com.google.firebase:firebase-database:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/a3909fd1c6f75ecb630a9e5c17c11dac/jetified-firebase-database-17.0.0/AndroidManifest.xml:29:9-33:19
-86-->[com.google.firebase:firebase-database:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/a3909fd1c6f75ecb630a9e5c17c11dac/jetified-firebase-database-17.0.0/AndroidManifest.xml:29:18-89
-87            <meta-data
-87-->[com.google.firebase:firebase-database:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/a3909fd1c6f75ecb630a9e5c17c11dac/jetified-firebase-database-17.0.0/AndroidManifest.xml:30:13-32:85
-88                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-88-->[com.google.firebase:firebase-database:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/a3909fd1c6f75ecb630a9e5c17c11dac/jetified-firebase-database-17.0.0/AndroidManifest.xml:31:17-109
-89                android:value="com.google.firebase.components.ComponentRegistrar" />
-89-->[com.google.firebase:firebase-database:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/a3909fd1c6f75ecb630a9e5c17c11dac/jetified-firebase-database-17.0.0/AndroidManifest.xml:32:17-82
-90        </service>
-91
-92        <activity
-92-->[com.google.android.gms:play-services-base:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/3679fa9be1d67d14c72169d3353f14d4/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
-93            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-93-->[com.google.android.gms:play-services-base:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/3679fa9be1d67d14c72169d3353f14d4/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-94            android:exported="false"
-94-->[com.google.android.gms:play-services-base:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/3679fa9be1d67d14c72169d3353f14d4/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
-95            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-95-->[com.google.android.gms:play-services-base:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/3679fa9be1d67d14c72169d3353f14d4/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
-96
-97        <provider
-97-->[com.google.firebase:firebase-common:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/d42d6154c626348d39e01ff6984e4b74/jetified-firebase-common-17.0.0/AndroidManifest.xml:12:9-16:39
-98            android:name="com.google.firebase.provider.FirebaseInitProvider"
-98-->[com.google.firebase:firebase-common:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/d42d6154c626348d39e01ff6984e4b74/jetified-firebase-common-17.0.0/AndroidManifest.xml:13:13-77
-99            android:authorities="com.googlemap.google_map_flutter.firebaseinitprovider"
-99-->[com.google.firebase:firebase-common:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/d42d6154c626348d39e01ff6984e4b74/jetified-firebase-common-17.0.0/AndroidManifest.xml:14:13-72
-100            android:exported="false"
-100-->[com.google.firebase:firebase-common:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/d42d6154c626348d39e01ff6984e4b74/jetified-firebase-common-17.0.0/AndroidManifest.xml:15:13-37
-101            android:initOrder="100" />
-101-->[com.google.firebase:firebase-common:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/d42d6154c626348d39e01ff6984e4b74/jetified-firebase-common-17.0.0/AndroidManifest.xml:16:13-36
-102
-103        <meta-data
-103-->[com.google.android.gms:play-services-basement:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/a7975ba3cb0c3630bd14453686890431/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-104            android:name="com.google.android.gms.version"
-104-->[com.google.android.gms:play-services-basement:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/a7975ba3cb0c3630bd14453686890431/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-105            android:value="@integer/google_play_services_version" /> <!-- The activities will be merged into the manifest of the hosting app. -->
-105-->[com.google.android.gms:play-services-basement:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/a7975ba3cb0c3630bd14453686890431/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-106        <activity
-106-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:12:5-271
-107            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
-107-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:12:15-102
-108            android:enabled="false"
-108-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:12:103-126
-109            android:exported="false"
-109-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:12:127-151
-110            android:launchMode="singleInstance"
-110-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:12:204-239
-111            android:process=":playcore_missing_splits_activity"
-111-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:12:152-203
-112            android:stateNotNeeded="true" />
-112-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:12:240-269
-113        <activity
-113-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:13:5-226
-114            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
-114-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:13:15-95
-115            android:enabled="false"
-115-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:13:96-119
-116            android:exported="false"
-116-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:13:120-144
-117            android:stateNotNeeded="true"
-117-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:13:145-174
-118            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The services will be merged into the manifest of the hosting app. -->
-118-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:13:175-224
-119        <service
-119-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:16:5-18:15
-120            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
-120-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:16:14-95
-121            android:enabled="false"
-121-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:16:96-119
-122            android:exported="true" >
-122-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:16:120-143
-123            <meta-data
-123-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:17:7-108
-124                android:name="com.google.android.play.core.assetpacks.versionCode"
-124-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:17:18-84
-125                android:value="10901" />
-125-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:17:85-106
-126        </service>
-127        <service
-127-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:19:5-147
-128            android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"
-128-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:19:14-96
-129            android:enabled="false"
-129-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:19:97-120
-130            android:exported="false" />
-130-->[com.google.android.play:core:1.9.1] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/bfaf1aef0b16d55407b0b903e4fa0cb6/jetified-core-1.9.1/AndroidManifest.xml:19:121-145
-131    </application>
-132
-133</manifest>
+78        <uses-library
+78-->[com.google.android.gms:play-services-maps:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/6f3daa1ca7d5f0cb334e07491a88b930/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+79            android:name="org.apache.http.legacy"
+79-->[com.google.android.gms:play-services-maps:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/6f3daa1ca7d5f0cb334e07491a88b930/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+80            android:required="false" />
+80-->[com.google.android.gms:play-services-maps:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/6f3daa1ca7d5f0cb334e07491a88b930/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+81
+82        <service android:name="com.google.firebase.components.ComponentDiscoveryService" >
+82-->[com.google.firebase:firebase-database:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/a3909fd1c6f75ecb630a9e5c17c11dac/jetified-firebase-database-17.0.0/AndroidManifest.xml:29:9-33:19
+82-->[com.google.firebase:firebase-database:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/a3909fd1c6f75ecb630a9e5c17c11dac/jetified-firebase-database-17.0.0/AndroidManifest.xml:29:18-89
+83            <meta-data
+83-->[com.google.firebase:firebase-database:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/a3909fd1c6f75ecb630a9e5c17c11dac/jetified-firebase-database-17.0.0/AndroidManifest.xml:30:13-32:85
+84                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+84-->[com.google.firebase:firebase-database:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/a3909fd1c6f75ecb630a9e5c17c11dac/jetified-firebase-database-17.0.0/AndroidManifest.xml:31:17-109
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.firebase:firebase-database:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/a3909fd1c6f75ecb630a9e5c17c11dac/jetified-firebase-database-17.0.0/AndroidManifest.xml:32:17-82
+86        </service>
+87
+88        <activity
+88-->[com.google.android.gms:play-services-base:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/3679fa9be1d67d14c72169d3353f14d4/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+89            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+89-->[com.google.android.gms:play-services-base:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/3679fa9be1d67d14c72169d3353f14d4/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+90            android:exported="false"
+90-->[com.google.android.gms:play-services-base:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/3679fa9be1d67d14c72169d3353f14d4/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+91            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+91-->[com.google.android.gms:play-services-base:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/3679fa9be1d67d14c72169d3353f14d4/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+92
+93        <provider
+93-->[com.google.firebase:firebase-common:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/d42d6154c626348d39e01ff6984e4b74/jetified-firebase-common-17.0.0/AndroidManifest.xml:12:9-16:39
+94            android:name="com.google.firebase.provider.FirebaseInitProvider"
+94-->[com.google.firebase:firebase-common:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/d42d6154c626348d39e01ff6984e4b74/jetified-firebase-common-17.0.0/AndroidManifest.xml:13:13-77
+95            android:authorities="com.googlemap.google_map_flutter.firebaseinitprovider"
+95-->[com.google.firebase:firebase-common:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/d42d6154c626348d39e01ff6984e4b74/jetified-firebase-common-17.0.0/AndroidManifest.xml:14:13-72
+96            android:exported="false"
+96-->[com.google.firebase:firebase-common:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/d42d6154c626348d39e01ff6984e4b74/jetified-firebase-common-17.0.0/AndroidManifest.xml:15:13-37
+97            android:initOrder="100" />
+97-->[com.google.firebase:firebase-common:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/d42d6154c626348d39e01ff6984e4b74/jetified-firebase-common-17.0.0/AndroidManifest.xml:16:13-36
+98
+99        <meta-data
+99-->[com.google.android.gms:play-services-basement:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/a7975ba3cb0c3630bd14453686890431/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+100            android:name="com.google.android.gms.version"
+100-->[com.google.android.gms:play-services-basement:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/a7975ba3cb0c3630bd14453686890431/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+101            android:value="@integer/google_play_services_version" />
+101-->[com.google.android.gms:play-services-basement:17.0.0] /Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/a7975ba3cb0c3630bd14453686890431/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+102    </application>
+103
+104</manifest>
