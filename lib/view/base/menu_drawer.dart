@@ -41,7 +41,7 @@ class _MenuDrawerState extends State<MenuDrawer> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Container(
-        width: 200,
+        width: 150,
         height: 400,
  
         child: ClipRRect(  borderRadius: BorderRadius.vertical(top: Radius.circular(10)),

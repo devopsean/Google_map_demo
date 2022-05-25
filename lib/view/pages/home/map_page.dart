@@ -298,7 +298,7 @@ class _MapPageState extends State<MapPage> with SingleTickerProviderStateMixin {
       //  resizeToAvoidBottomInset: false,
       backgroundColor: ColorPalette.scaffoldBackgroundGrey,
       appBar: AppBar(
-        title: Text('Google Map Example'),
+        title: Text('Google Navigation Demo'),
         backgroundColor: ColorPalette.darkBlue_1,
       ),
       key: _scaffoldKey!,
