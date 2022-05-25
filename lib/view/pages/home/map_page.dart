@@ -11,9 +11,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_polyline_points/flutter_polyline_points.dart';
 import 'package:google_map_flutter/data/constants/enums.dart';
 import 'package:google_map_flutter/data/utils/color_palette.dart';
-import 'package:google_map_flutter/logic/internet_connection/bloc/connection_bloc.dart' as conbloc;
+import 'package:google_map_flutter/logic/internet_connection/bloc/connection_bloc.dart'
+    as conbloc;
 import 'package:google_map_flutter/logic/map/cubit/map_cubit.dart';
-import 'package:google_map_flutter/view/base/menu_drawer.dart';
+import 'package:google_map_flutter/view/pages/home/widgets/menu_drawer.dart';
 import 'package:google_map_flutter/view/base/toast_snackbar.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
@@ -220,8 +221,6 @@ class _MapPageState extends State<MapPage> with SingleTickerProviderStateMixin {
 
   @override
   void initState() {
-    //WidgetsBinding.instance!.addPostFrameCallback((_) => _loadMap());
-
     getUserLocation().then((value) => _loadMap()); // TODO: implement initState
     super.initState();
   }
@@ -307,67 +306,70 @@ class _MapPageState extends State<MapPage> with SingleTickerProviderStateMixin {
       body: BlocConsumer<conbloc.ConnectionBloc, conbloc.ConnectionState>(
         listener: (context, state) {
           if (state is conbloc.ConnectedSucessState) {
-        showToast('Internet Connected');
+            showToast('Internet Connected');
           } else if (state is conbloc.ConnectedFailureState) {
-    showToast('Internet Lost');
+            showToast('Internet Lost');
           }
         },
         builder: (context, state) {
-        if (state is conbloc.ConnectedSucessState) {
-          return SafeArea(
-            child: Stack(
-              children: <Widget>[
-                Positioned(
-                  top: 0,
-                  bottom: 0,
-                  left: 0,
-                  right: 0,
-                  child: Stack(
-                    children: <Widget>[
-                      BlocConsumer<MapCubit, MapStyle>(
-                        listener: (context, state) {
-                          // TODO: implement listener
+          if (state is conbloc.ConnectedSucessState) {
+            return SafeArea(
+              child: Stack(
+                children: <Widget>[
+                  Positioned(
+                    top: 0,
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    child: Stack(
+                      children: <Widget>[
+                        BlocConsumer<MapCubit, MapStyle>(
+                          listener: (context, state) {
+                            // TODO: implement listener
 
-                          mapController!.setMapStyle(mapStyleList[state.index]);
-                        },
-                        builder: (context, state) {
-                          return GoogleMap(
-                            buildingsEnabled: false,
-                            myLocationEnabled: true,
-                            gestureRecognizers:
-                            <Factory<OneSequenceGestureRecognizer>>[
-                              new Factory<OneSequenceGestureRecognizer>(
-                                    () => new EagerGestureRecognizer(),
-                              ),
-                            ].toSet(),
-                            initialCameraPosition: _initialCameraPosition,
-                            mapType: MapType.normal,
-                            onMapCreated: (GoogleMapController controller) {
-                              mapController = controller;
-                              //  controller.setMapStyle(mapStyleList[state.index]);
-                              _controller.complete(controller);
-                            },
-                            myLocationButtonEnabled: true,
-                            zoomGesturesEnabled: true,
-                            zoomControlsEnabled: false,
-                            compassEnabled: true,
-                            rotateGesturesEnabled: true,
-                            markers: _markers,
-                            circles: _circles,
-                            polylines: _polylines,
-                          );
-                        },
-                      ),
-                    ],
+                            mapController!
+                                .setMapStyle(mapStyleList[state.index]);
+                          },
+                          builder: (context, state) {
+                            return GoogleMap(
+                              buildingsEnabled: false,
+                              myLocationEnabled: true,
+                              gestureRecognizers:
+                                  <Factory<OneSequenceGestureRecognizer>>[
+                                new Factory<OneSequenceGestureRecognizer>(
+                                  () => new EagerGestureRecognizer(),
+                                ),
+                              ].toSet(),
+                              initialCameraPosition: _initialCameraPosition,
+                              mapType: MapType.normal,
+                              onMapCreated: (GoogleMapController controller) {
+                                mapController = controller;
+                                //  controller.setMapStyle(mapStyleList[state.index]);
+                                _controller.complete(controller);
+                              },
+                              myLocationButtonEnabled: true,
+                              zoomGesturesEnabled: true,
+                              zoomControlsEnabled: false,
+                              compassEnabled: true,
+                              rotateGesturesEnabled: true,
+                              markers: _markers,
+                              circles: _circles,
+                              polylines: _polylines,
+                            );
+                          },
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-              ],
-            ),
-          );
-        } else if (state is conbloc.ConnectedFailureState){
-          return Center(child: Text('Not connected'),);
-        }
-        return Container();
+                ],
+              ),
+            );
+          } else if (state is conbloc.ConnectedFailureState) {
+            return Center(
+              child: Text('Not connected'),
+            );
+          }
+          return Container();
         },
       ),
       endDrawer: MenuDrawer(),

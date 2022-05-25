@@ -105,8 +105,8 @@ class RequestHelper {
 
     return jsonDecode(response.body);
   }
-
-  static String mapKey = 'AIzaSyBAaamLNznjZApzbu038_LxbysOumdDHVM';
+///ADD KEY HERE
+  static String mapKey = 'YOUR-API-KEY';
 
   static Future<MarkerDirection> getDirectionDetails(
       LatLng startPosition, LatLng endPosition) async {
