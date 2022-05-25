@@ -4,23 +4,6 @@
             "outputFile": "/Users/SEANONUOHA/StudioProjects/google_map_flutter/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml",
             "map": [
                 {
-                    "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/062c584e7105f32bea72d749c12db8a1/appcompat-1.2.0/res/values-zh-rHK/values-zh-rHK.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,200,293,393,475,572,680,757,832,924,1018,1109,1205,1300,1394,1490,1582,1674,1766,1844,1940,2035,2130,2227,2323,2421,2572,2666",
-                        "endColumns": "94,92,99,81,96,107,76,74,91,93,90,95,94,93,95,91,91,91,77,95,94,94,96,95,97,150,93,78",
-                        "endOffsets": "195,288,388,470,567,675,752,827,919,1013,1104,1200,1295,1389,1485,1577,1669,1761,1839,1935,2030,2125,2222,2318,2416,2567,2661,2740"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,55",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,200,293,393,475,572,680,757,832,924,1018,1109,1205,1300,1394,1490,1582,1674,1766,1844,1940,2035,2130,2227,2323,2421,2572,5636",
-                        "endColumns": "94,92,99,81,96,107,76,74,91,93,90,95,94,93,95,91,91,91,77,95,94,94,96,95,97,150,93,78",
-                        "endOffsets": "195,288,388,470,567,675,752,827,919,1013,1104,1200,1295,1389,1485,1577,1669,1761,1839,1935,2030,2125,2222,2318,2416,2567,2661,5710"
-                    }
-                },
-                {
                     "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/a7975ba3cb0c3630bd14453686890431/jetified-play-services-basement-17.0.0/res/values-zh-rHK/values.xml",
                     "from": {
                         "startLines": "4",
@@ -30,45 +13,11 @@
                         "endOffsets": "417"
                     },
                     "to": {
-                        "startLines": "37",
+                        "startLines": "10",
                         "startColumns": "4",
-                        "startOffsets": "3688",
+                        "startOffsets": "1127",
                         "endColumns": "166",
-                        "endOffsets": "3850"
-                    }
-                },
-                {
-                    "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/77747992e74ebb62cedfb9eaf9c15965/navigation-ui-2.3.4/res/values-zh-rHK/values-zh-rHK.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,154",
-                        "endColumns": "98,99",
-                        "endOffsets": "149,249"
-                    },
-                    "to": {
-                        "startLines": "50,51",
-                        "startColumns": "4,4",
-                        "startOffsets": "5235,5334",
-                        "endColumns": "98,99",
-                        "endOffsets": "5329,5429"
-                    }
-                },
-                {
-                    "source": "/Users/SEANONUOHA/.gradle/caches/transforms-2/files-2.1/6237ad95b0e5b20ab6d8b06547a7d208/jetified-navigation-dynamic-features-fragment-2.3.4/res/values-zh-rHK/values-zh-rHK.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,142,225,309,373,444",
-                        "endColumns": "86,82,83,63,70,66",
-                        "endOffsets": "137,220,304,368,439,506"
-                    },
-                    "to": {
-                        "startLines": "47,48,49,52,53,54",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "4981,5068,5151,5434,5498,5569",
-                        "endColumns": "86,82,83,63,70,66",
-                        "endOffsets": "5063,5146,5230,5493,5564,5631"
+                        "endOffsets": "1289"
                     }
                 },
                 {
@@ -81,11 +30,11 @@
                         "endOffsets": "347,507,620,720,886,1000,1128,1246,1415,1514,1674,1787,1953,2087,2168,2251,2348"
                     },
                     "to": {
-                        "startLines": "29,30,31,32,33,34,35,36,38,39,40,41,42,43,44,45,46",
+                        "startLines": "2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2666,2769,2929,3046,3150,3316,3434,3566,3855,4024,4127,4287,4404,4570,4708,4793,4880",
+                        "startOffsets": "105,208,368,485,589,755,873,1005,1294,1463,1566,1726,1843,2009,2147,2232,2319",
                         "endColumns": "102,159,116,103,165,117,131,121,168,102,159,116,165,137,84,86,100",
-                        "endOffsets": "2764,2924,3041,3145,3311,3429,3561,3683,4019,4122,4282,4399,4565,4703,4788,4875,4976"
+                        "endOffsets": "203,363,480,584,750,868,1000,1122,1458,1561,1721,1838,2004,2142,2227,2314,2415"
                     }
                 },
                 {
@@ -98,11 +47,11 @@
                         "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "56",
+                        "startLines": "20",
                         "startColumns": "4",
-                        "startOffsets": "5715",
+                        "startOffsets": "2420",
                         "endColumns": "100",
-                        "endOffsets": "5811"
+                        "endOffsets": "2516"
                     }
                 }
             ]

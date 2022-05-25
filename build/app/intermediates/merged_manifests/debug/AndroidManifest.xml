@@ -74,11 +74,7 @@
             android:required="false" />
         <uses-library
             android:name="androidx.window.sidecar"
-            android:required="false" />
-
-        <activity
-            android:name="com.amplifyframework.devmenu.DeveloperMenuActivity"
-            android:theme="@style/OverlayActivity" /> <!-- Needs to be explicitly declared on P+ -->
+            android:required="false" /> <!-- Needs to be explicitly declared on P+ -->
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
@@ -102,32 +98,7 @@
 
         <meta-data
             android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" /> <!-- The activities will be merged into the manifest of the hosting app. -->
-        <activity
-            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
-            android:enabled="false"
-            android:exported="false"
-            android:launchMode="singleInstance"
-            android:process=":playcore_missing_splits_activity"
-            android:stateNotNeeded="true" />
-        <activity
-            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
-            android:enabled="false"
-            android:exported="false"
-            android:stateNotNeeded="true"
-            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The services will be merged into the manifest of the hosting app. -->
-        <service
-            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
-            android:enabled="false"
-            android:exported="true" >
-            <meta-data
-                android:name="com.google.android.play.core.assetpacks.versionCode"
-                android:value="10901" />
-        </service>
-        <service
-            android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"
-            android:enabled="false"
-            android:exported="false" />
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>
